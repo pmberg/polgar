@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The POLGAR Project</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.5/cdn.js"
+      defer
+    ></script>
+  </head>
+
+  <body>
+    <nav class="section">
+      <ul
+        style="
+          display: flex;
+          gap: 2em;
+          justify-content: center;
+          list-style: none;
+          padding: 0;
+        "
+      >
+        <li><a href="#core" class="core">Core</a></li>
+        <li><a href="#technical" class="technical">Technical</a></li>
+        <li><a href="#engineering" class="engineering">Engineering</a></li>
+        <li><a href="#theoretical" class="theoretical">Theoretical</a></li>
+        <li><a href="#governance" class="governance">Governance</a></li>
+      </ul>
+    </nav>
+
+    <div class="section">
+      <h1>The POLGAR Project</h1>
+      <p>
+        A website about practically oriented learning for general alignment
+        research, across a wide range of areas.
+      </p>
+
+      <p style="text-align: center; margin-top: 2em">
+        <a
+          href="#get-started"
+          style="
+            display: inline-block;
+            padding: 0.5em 1em;
+            background: #3d85c6;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-shadow: none;
+          "
+        >
+          Get Started
+        </a>
+      </p>
+    </div>
+
+    <div id="core" class="section" x-data="{ expanded: false }">
+      <h2 class="core" style="cursor: pointer" @click="expanded = !expanded">
+        Core
+        <small style="float: right">▼</small>
+      </h2>
+      <div x-show="expanded" style="transition: all 0.3s ease-in-out">
+        <p>
+          Core material is focused on basic technical content useful for all
+          sorts of professionals, as well as core AI safety content useful for
+          all different applications.
+        </p>
+        <ul style="margin-top: 1em">
+          <li>Foundational Mathematics</li>
+          <li>Machine Learning Basics</li>
+          <li>Ethics and Safety Principles</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="technical" class="section" x-data="{ expanded: false }">
+      <h2
+        class="technical"
+        style="cursor: pointer"
+        @click="expanded = !expanded"
+      >
+        Technical Alignment
+        <small style="float: right">▼</small>
+      </h2>
+      <div x-show="expanded" style="transition: all 0.3s ease-in-out">
+        <p>
+          Technical Alignment content is content that is useful in both
+          theoretical and engineering applications, but may not be as useful in
+          policy/governance. However, it is more likely to come in handy in a
+          policy/governance context than Theoretical or Engineering content is.
+        </p>
+        <ul style="margin-top: 1em">
+          <li>AI Alignment Techniques</li>
+          <li>Value Learning</li>
+          <li>Reward Modeling</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="engineering" class="section" x-data="{ expanded: false }">
+      <h2
+        class="engineering"
+        style="cursor: pointer"
+        @click="expanded = !expanded"
+      >
+        Engineering
+        <small style="float: right">▼</small>
+      </h2>
+      <div x-show="expanded" style="transition: all 0.3s ease-in-out">
+        <p>
+          Engineering content is focused on practical implementation of AI
+          safety mechanisms, including technical safeguards, testing
+          methodologies, and robustness measures.
+        </p>
+        <ul style="margin-top: 1em">
+          <li>Safety Testing Frameworks</li>
+          <li>Robustness Implementation</li>
+          <li>System Architecture</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="theoretical" class="section" x-data="{ expanded: false }">
+      <h2
+        class="theoretical"
+        style="cursor: pointer"
+        @click="expanded = !expanded"
+      >
+        Theoretical
+        <small style="float: right">▼</small>
+      </h2>
+      <div x-show="expanded" style="transition: all 0.3s ease-in-out">
+        <p>
+          Theoretical content is focused on theoretical alignment research,
+          focused more on resolving unsolved fundamental problems in the MLAI
+          space than on developing alignment technologies for current systems.
+        </p>
+        <ul style="margin-top: 1em">
+          <li>Abstract Machine Learning Theory</li>
+          <li>Decision Theory</li>
+          <li>Computational Learning Theory</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="governance" class="section" x-data="{ expanded: false }">
+      <h2
+        class="governance"
+        style="cursor: pointer"
+        @click="expanded = !expanded"
+      >
+        Governance
+        <small style="float: right">▼</small>
+      </h2>
+      <div x-show="expanded" style="transition: all 0.3s ease-in-out">
+        <p>
+          Governance content addresses policy frameworks, institutional design,
+          and coordination mechanisms for ensuring safe and beneficial AI
+          development.
+        </p>
+        <ul style="margin-top: 1em">
+          <li>Policy Development</li>
+          <li>International Coordination</li>
+          <li>Institutional Design</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="get-started" class="section">
+      <h2>Get Started</h2>
+      <p>
+        The POLGAR Project welcomes contributors and learners from all
+        backgrounds. To get started:
+      </p>
+      <ol style="margin-top: 1em">
+        <li>Review our learning tracks above</li>
+        <li>Join our community on GitHub</li>
+        <li>Start with Core materials</li>
+      </ol>
+      <p style="text-align: center; margin-top: 2em">
+        <a
+          href="https://github.com/peterberggren/polgar"
+          style="
+            display: inline-block;
+            padding: 0.5em 1em;
+            background: #444444;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-shadow: none;
+          "
+        >
+          Visit GitHub Repository
+        </a>
+      </p>
+    </div>
+
+    <footer class="section" style="text-align: center; margin-top: 3em">
+      <p>© 2024 The POLGAR Project. Licensed under MIT.</p>
+    </footer>
+  </body>
+</html>
