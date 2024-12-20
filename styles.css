@@ -9,3 +9,42 @@ body {
   text-shadow: 0 1px 0 #ffffff;
   max-width: 73%;
 }
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+
+.section {
+  margin: 2em 0;
+  padding: 1em;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+}
+
+/* Generic color classes that can be applied to any element */
+
+.core {
+  color: #444444;
+}
+
+.technical {
+  color: #e69139;
+}
+
+.engineering {
+  color: #cc0000;
+}
+
+.theoretical {
+  color: #3d85c6;
+}
+
+.governance {
+  color: #6aa84f;
+}
